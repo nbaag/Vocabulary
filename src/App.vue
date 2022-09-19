@@ -122,6 +122,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(59, 59, 59);
+}
+
 .container {
   max-width: 600px;
   margin: auto;
@@ -135,30 +139,43 @@
 ul {
   list-style-type: none;
   padding-left: 5px;
-  border: 1px solid pink;
+  border: 1px solid rgb(230, 230, 230);
   border-radius: 5px;
 }
 
 input {
   margin: 5px;
   padding: 5px;
-  border: 2px solid pink;
+  border: 2px solid rgb(230, 230, 230);
   border-radius: 5px;
+  background-color: rgb(121, 121, 121);
 }
+
 input:focus {
   outline: none;
   border: 2px solid skyblue;
 }
+
+input::placeholder{
+  color: aliceblue;
+}
+
 button {
   margin: 5px;
   padding: 5px;
   background: none;
-  border: 2px solid pink;
+  border: 2px solid rgb(230, 230, 230);
   border-radius: 5px;
   cursor: pointer;
+  color: aliceblue;
 }
+
 button:hover {
   border-color: skyblue;
+}
+
+li {
+  color: aliceblue;
 }
 
 .deleteBtn {
